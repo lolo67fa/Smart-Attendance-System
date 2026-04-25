@@ -1,0 +1,584 @@
+ERROR:root:Error in process_login: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models/face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+ERROR:root:Error in process_login: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models/face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+ERROR:root:Error in process_login: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models/face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+ERROR:root:Error in process_login: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models/face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+ERROR:root:Error in process_login: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models/face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+ERROR:root:Error in process_login: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models/face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+ERROR:root:Error in process_login: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models/face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+ERROR:root:Error in process_login: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models/face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+ERROR:root:Error in process_login: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models/face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+ERROR:root:Error in process_login: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models/face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+ERROR:root:Error in process_login: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models/face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+ERROR:root:Error in process_login: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models/face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+ERROR:root:Error in process_login: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models/face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+ERROR:root:Error in process_login: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models/face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+ERROR:root:Error in process_login: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models/face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+ERROR:root:Error in process_login: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models/face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+ERROR:root:Error in process_login: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models/face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+ERROR:root:Error in process_login: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models/face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+ERROR:root:Error in process_login: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models/face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+2026-04-16 23:53:03,651 [INFO] core.data_manager: Created student data file: \u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0637\u0644\u0627\u0628.xlsx
+2026-04-16 23:53:05,194 [INFO] __main__: Navigated to: portal
+2026-04-16 23:53:05,194 [INFO] __main__: Application initialized
+2026-04-16 23:53:17,134 [INFO] __main__: Navigated to: instructor
+2026-04-16 23:53:21,136 [INFO] __main__: Navigated to: portal
+2026-04-16 23:53:25,437 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-16 23:53:27,081 [INFO] core.camera: Camera started: index 0
+2026-04-16 23:53:33,272 [INFO] __main__: Navigated to: scanner
+2026-04-16 23:53:47,054 [ERROR] core.face_engine: Recognition error: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models\\face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+2026-04-16 23:54:05,254 [INFO] __main__: Navigated to: scanner
+2026-04-16 23:54:29,274 [INFO] core.data_manager: Saved face image: D:\body\programming\projects\Main_code_version3\db\827793.jpg
+2026-04-16 23:54:29,332 [INFO] core.data_manager: Registered new student: \u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646 \u0627\u0633\u0627\u0645\u0647
+2026-04-16 23:54:30,999 [INFO] __main__: Navigated to: portal
+2026-04-16 23:54:32,243 [INFO] __main__: Navigated to: scanner
+2026-04-16 23:54:38,329 [ERROR] core.face_engine: Recognition error: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models\\face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+2026-04-16 23:54:51,047 [INFO] __main__: Navigated to: scanner
+2026-04-16 23:56:51,144 [INFO] core.camera: Camera released
+2026-04-16 23:56:51,144 [INFO] __main__: Application closed
+2026-04-17 00:01:52,415 [INFO] __main__: Navigated to: portal
+2026-04-17 00:01:52,415 [INFO] __main__: Application initialized
+2026-04-17 00:02:01,378 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 00:02:02,899 [INFO] core.camera: Camera started: index 0
+2026-04-17 00:02:05,287 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:02:38,122 [ERROR] core.face_engine: Recognition error: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models\\face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+2026-04-17 00:03:10,842 [INFO] __main__: Navigated to: portal
+2026-04-17 00:03:12,089 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:04:18,859 [ERROR] core.face_engine: Recognition error: Command '['D:\\body\\programming\\projects\\Main_code_version3\\models\\face_recognition.exe', 'D:\\body\\programming\\projects\\Main_code_version3\\db', 'D:\\body\\programming\\projects\\Main_code_version3\\.temp.jpg']' returned non-zero exit status 1.
+2026-04-17 00:10:11,331 [INFO] core.camera: Camera released
+2026-04-17 00:10:11,331 [INFO] __main__: Application closed
+2026-04-17 00:10:20,613 [INFO] core.face_engine: Loaded 3 known face(s) from database
+2026-04-17 00:10:21,412 [INFO] __main__: Navigated to: portal
+2026-04-17 00:10:21,412 [INFO] __main__: Application initialized
+2026-04-17 00:10:26,155 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 00:10:27,820 [INFO] core.camera: Camera started: index 0
+2026-04-17 00:10:29,746 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:10:43,463 [INFO] core.face_engine: Face matched: ID=157801, distance=0.2548
+2026-04-17 00:10:48,731 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:11:20,781 [INFO] core.data_manager: Saved face image: D:\body\programming\projects\Main_code_version3\db\982403.jpg
+2026-04-17 00:11:21,179 [ERROR] core.data_manager: Registration error: [Errno 13] Permission denied: '\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0637\u0644\u0627\u0628.xlsx'
+2026-04-17 00:11:27,927 [INFO] core.data_manager: Saved face image: D:\body\programming\projects\Main_code_version3\db\951469.jpg
+2026-04-17 00:11:27,933 [ERROR] core.data_manager: Registration error: [Errno 13] Permission denied: '\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0637\u0644\u0627\u0628.xlsx'
+2026-04-17 00:12:51,942 [INFO] core.data_manager: Saved face image: D:\body\programming\projects\Main_code_version3\db\898818.jpg
+2026-04-17 00:12:51,960 [INFO] core.data_manager: Registered new student: \u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646 \u0627\u0633\u0627\u0645\u0647
+2026-04-17 00:12:54,549 [INFO] core.face_engine: Loaded 6 known face(s) from database
+2026-04-17 00:12:58,633 [INFO] __main__: Navigated to: portal
+2026-04-17 00:12:59,896 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:13:07,824 [INFO] core.face_engine: Face matched: ID=951469, distance=0.1786
+2026-04-17 00:13:19,145 [INFO] core.face_engine: Face matched: ID=951469, distance=0.1936
+2026-04-17 00:14:45,636 [INFO] core.camera: Camera released
+2026-04-17 00:14:45,636 [INFO] __main__: Application closed
+2026-04-17 00:14:54,070 [INFO] core.face_engine: Loaded 6 known face(s) from database
+2026-04-17 00:14:54,482 [INFO] __main__: Navigated to: portal
+2026-04-17 00:14:54,482 [INFO] __main__: Application initialized
+2026-04-17 00:14:58,419 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 00:14:59,977 [INFO] core.camera: Camera started: index 0
+2026-04-17 00:15:01,832 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:15:17,424 [INFO] core.face_engine: Face matched: ID=951469, distance=0.1876
+2026-04-17 00:15:55,581 [INFO] core.face_engine: Face matched: ID=951469, distance=0.2119
+2026-04-17 00:16:37,546 [INFO] core.camera: Camera released
+2026-04-17 00:16:37,546 [INFO] __main__: Application closed
+2026-04-17 00:19:02,362 [INFO] core.face_engine: Loaded 6 known face(s) from database
+2026-04-17 00:19:02,744 [INFO] __main__: Navigated to: portal
+2026-04-17 00:19:02,744 [INFO] __main__: Application initialized
+2026-04-17 00:19:06,092 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 00:19:07,732 [INFO] core.camera: Camera started: index 0
+2026-04-17 00:19:09,599 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:19:28,128 [INFO] core.face_engine: Face matched: ID=827793, distance=0.2156
+2026-04-17 00:19:35,413 [INFO] core.data_manager: Attendance logged: \u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646 \u0627\u0633\u0627\u0645\u0647 (3036) - \u0627\u0644\u0641\u0631\u0642\u0629 \u0627\u0644\u0631\u0627\u0628\u0639\u0629 - \u0634\u0639\u0628\u0629 \u0639\u0644\u0648\u0645 \u062d\u0627\u0633\u0628
+2026-04-17 00:19:39,544 [INFO] __main__: Navigated to: portal
+2026-04-17 00:19:45,455 [INFO] __main__: Navigated to: instructor
+2026-04-17 00:20:00,833 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:20:03,483 [INFO] __main__: Navigated to: portal
+2026-04-17 00:20:07,429 [INFO] __main__: Navigated to: instructor
+2026-04-17 00:20:22,705 [INFO] __main__: Navigated to: portal
+2026-04-17 00:26:28,794 [INFO] core.camera: Camera released
+2026-04-17 00:26:28,794 [INFO] __main__: Application closed
+2026-04-17 00:26:41,850 [INFO] core.face_engine: Loaded 6 known face(s) from database
+2026-04-17 00:26:42,219 [INFO] __main__: Navigated to: portal
+2026-04-17 00:26:42,219 [INFO] __main__: Application initialized
+2026-04-17 00:26:53,913 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 00:26:55,596 [INFO] core.camera: Camera started: index 0
+2026-04-17 00:27:00,664 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:27:10,354 [INFO] core.face_engine: Face matched: ID=898818, distance=0.1832
+2026-04-17 00:27:16,485 [INFO] core.face_engine: Face matched: ID=951469, distance=0.1752
+2026-04-17 00:27:20,957 [INFO] core.face_engine: Face matched: ID=951469, distance=0.1749
+2026-04-17 00:27:27,806 [INFO] __main__: Navigated to: portal
+2026-04-17 00:27:28,764 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:27:33,302 [INFO] core.face_engine: Face matched: ID=73814, distance=0.2129
+2026-04-17 00:27:36,594 [INFO] __main__: Navigated to: portal
+2026-04-17 00:27:41,576 [INFO] __main__: Navigated to: instructor
+2026-04-17 00:27:43,401 [INFO] __main__: Navigated to: portal
+2026-04-17 00:27:44,180 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:27:48,283 [INFO] core.face_engine: Face matched: ID=898818, distance=0.1640
+2026-04-17 00:27:52,011 [INFO] __main__: Navigated to: portal
+2026-04-17 00:27:52,838 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:27:55,500 [INFO] core.face_engine: Face matched: ID=898818, distance=0.1635
+2026-04-17 00:27:58,134 [INFO] __main__: Navigated to: portal
+2026-04-17 00:49:11,887 [INFO] core.camera: Camera released
+2026-04-17 00:49:11,887 [INFO] __main__: Application closed
+2026-04-17 00:49:30,817 [INFO] core.face_engine: Loaded 6 known face(s) from database
+2026-04-17 00:49:31,782 [INFO] __main__: Navigated to: portal
+2026-04-17 00:49:31,782 [INFO] __main__: Application initialized
+2026-04-17 00:49:39,655 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 00:49:41,357 [INFO] core.camera: Camera started: index 0
+2026-04-17 00:49:44,987 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:49:51,586 [INFO] core.face_engine: Face matched: ID=951469, distance=0.2071
+2026-04-17 00:49:59,807 [INFO] __main__: Navigated to: portal
+2026-04-17 00:50:02,540 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:50:06,808 [INFO] core.face_engine: Face matched: ID=951469, distance=0.2188
+2026-04-17 00:50:11,037 [INFO] __main__: Navigated to: portal
+2026-04-17 00:50:12,107 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:50:21,845 [INFO] core.face_engine: Face matched: ID=951469, distance=0.1883
+2026-04-17 00:50:35,323 [INFO] __main__: Navigated to: portal
+2026-04-17 00:50:36,620 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:50:37,613 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:50:55,549 [INFO] core.data_manager: Saved face image: D:\body\programming\projects\Main_code_version3\db\721238.jpg
+2026-04-17 00:50:55,735 [INFO] core.data_manager: Registered new student: \u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646
+2026-04-17 00:50:58,726 [INFO] core.face_engine: Loaded 7 known face(s) from database
+2026-04-17 00:51:00,166 [INFO] __main__: Navigated to: portal
+2026-04-17 00:51:01,129 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:51:06,132 [INFO] core.face_engine: Face matched: ID=951469, distance=0.1869
+2026-04-17 00:51:10,763 [INFO] core.face_engine: Face matched: ID=721238, distance=0.1959
+2026-04-17 00:51:42,285 [INFO] __main__: Navigated to: portal
+2026-04-17 00:51:56,495 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:52:03,257 [INFO] core.face_engine: Face matched: ID=951469, distance=0.1886
+2026-04-17 00:52:10,450 [INFO] core.face_engine: Face matched: ID=721238, distance=0.1894
+2026-04-17 00:52:13,868 [INFO] core.data_manager: Attendance logged: \u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646 (1258) - \u0627\u0644\u0641\u0631\u0642\u0629 \u0627\u0644\u0631\u0627\u0628\u0639\u0629 - \u0634\u0639\u0628\u0629 \u0639\u0644\u0648\u0645 \u062d\u0627\u0633\u0628
+2026-04-17 00:52:17,870 [INFO] __main__: Navigated to: portal
+2026-04-17 00:52:22,892 [INFO] __main__: Navigated to: instructor
+2026-04-17 00:52:43,167 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:52:58,859 [INFO] core.data_manager: Saved face image: D:\body\programming\projects\Main_code_version3\db\991621.jpg
+2026-04-17 00:52:58,872 [INFO] core.data_manager: Registered new student: \u0633\u064a\u062f
+2026-04-17 00:53:02,372 [INFO] core.face_engine: Loaded 8 known face(s) from database
+2026-04-17 00:53:04,058 [INFO] __main__: Navigated to: portal
+2026-04-17 00:53:05,008 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:53:10,020 [INFO] core.face_engine: Face matched: ID=721238, distance=0.1971
+2026-04-17 00:53:16,291 [INFO] __main__: Navigated to: portal
+2026-04-17 00:54:00,039 [INFO] __main__: Navigated to: scanner
+2026-04-17 00:54:04,526 [INFO] core.face_engine: Face matched: ID=721238, distance=0.1899
+2026-04-17 00:54:07,538 [INFO] core.data_manager: Attendance logged: \u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646 (1258) - \u0627\u0644\u0641\u0631\u0642\u0629 \u0627\u0644\u0631\u0627\u0628\u0639\u0629 - \u0634\u0639\u0628\u0629 \u0639\u0644\u0648\u0645 \u062d\u0627\u0633\u0628
+2026-04-17 00:54:10,719 [INFO] __main__: Navigated to: portal
+2026-04-17 00:54:15,201 [INFO] __main__: Navigated to: instructor
+2026-04-17 00:55:34,967 [INFO] __main__: Navigated to: portal
+2026-04-17 00:57:26,317 [INFO] core.camera: Camera released
+2026-04-17 00:57:26,317 [INFO] __main__: Application closed
+2026-04-17 00:57:46,355 [INFO] core.face_engine: Loaded 8 known face(s) from database
+2026-04-17 00:57:46,453 [INFO] __main__: Navigated to: portal
+2026-04-17 00:57:46,453 [INFO] __main__: Application initialized
+2026-04-17 00:58:02,148 [INFO] __main__: Navigated to: instructor
+2026-04-17 00:59:39,234 [INFO] __main__: Application closed
+2026-04-17 00:59:55,269 [INFO] core.face_engine: Loaded 8 known face(s) from database
+2026-04-17 00:59:55,349 [INFO] __main__: Navigated to: portal
+2026-04-17 00:59:55,349 [INFO] __main__: Application initialized
+2026-04-17 01:00:41,522 [INFO] __main__: Navigated to: instructor
+2026-04-17 01:01:13,858 [INFO] __main__: Navigated to: portal
+2026-04-17 01:01:29,960 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 01:01:31,680 [INFO] core.camera: Camera started: index 0
+2026-04-17 01:01:34,408 [INFO] __main__: Navigated to: scanner
+2026-04-17 01:01:42,473 [INFO] core.face_engine: Face matched: ID=721238, distance=0.2341
+2026-04-17 01:01:59,368 [INFO] core.data_manager: Attendance logged: \u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646 (1258) - \u0627\u0644\u0641\u0631\u0642\u0629 \u0627\u0644\u0631\u0627\u0628\u0639\u0629 - \u0634\u0639\u0628\u0629 \u0639\u0644\u0648\u0645 \u062d\u0627\u0633\u0628
+2026-04-17 01:02:06,164 [INFO] __main__: Navigated to: portal
+2026-04-17 01:02:10,018 [INFO] __main__: Navigated to: instructor
+2026-04-17 10:55:58,662 [INFO] __main__: Navigated to: portal
+2026-04-17 10:56:04,615 [INFO] __main__: Navigated to: scanner
+2026-04-17 10:56:13,294 [INFO] __main__: Navigated to: portal
+2026-04-17 10:56:19,702 [INFO] core.camera: Camera released
+2026-04-17 10:56:19,702 [INFO] __main__: Application closed
+2026-04-17 10:56:35,937 [INFO] core.face_engine: Loaded 8 known face(s) from database
+2026-04-17 10:56:36,039 [INFO] __main__: Navigated to: portal
+2026-04-17 10:56:36,039 [INFO] __main__: Application initialized
+2026-04-17 10:56:44,351 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 10:56:46,044 [INFO] core.camera: Camera started: index 0
+2026-04-17 10:56:50,384 [INFO] __main__: Navigated to: scanner
+2026-04-17 10:57:17,288 [INFO] __main__: Navigated to: portal
+2026-04-17 10:57:18,365 [INFO] __main__: Navigated to: scanner
+2026-04-17 10:57:30,945 [INFO] core.camera: Camera released
+2026-04-17 10:57:30,946 [INFO] __main__: Application closed
+2026-04-17 10:58:21,100 [INFO] core.face_engine: Loaded 8 known face(s) from database
+2026-04-17 10:58:21,170 [INFO] __main__: Navigated to: portal
+2026-04-17 10:58:21,170 [INFO] __main__: Application initialized
+2026-04-17 10:58:25,061 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 10:58:26,698 [INFO] core.camera: Camera started: index 0
+2026-04-17 10:58:28,849 [INFO] __main__: Navigated to: scanner
+2026-04-17 10:58:37,446 [INFO] core.camera: Switched to camera 1
+2026-04-17 11:04:58,161 [INFO] core.face_engine: Loaded 8 known face(s) from database
+2026-04-17 11:04:58,300 [INFO] __main__: Navigated to: portal
+2026-04-17 11:04:58,300 [INFO] __main__: Application initialized
+2026-04-17 11:05:05,287 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 11:05:06,827 [INFO] core.camera: Camera started: index 0
+2026-04-17 11:05:09,334 [INFO] __main__: Navigated to: scanner
+2026-04-17 11:06:24,801 [INFO] __main__: Navigated to: portal
+2026-04-17 11:06:25,851 [INFO] __main__: Navigated to: scanner
+2026-04-17 11:06:33,367 [INFO] core.camera: Camera released
+2026-04-17 11:06:33,367 [INFO] __main__: Application closed
+2026-04-17 11:06:40,174 [INFO] core.face_engine: Loaded 8 known face(s) from database
+2026-04-17 11:06:40,238 [INFO] __main__: Navigated to: portal
+2026-04-17 11:06:40,238 [INFO] __main__: Application initialized
+2026-04-17 11:06:43,855 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 11:06:45,398 [INFO] core.camera: Camera started: index 0
+2026-04-17 11:06:45,791 [INFO] __main__: Navigated to: scanner
+2026-04-17 11:07:18,010 [INFO] __main__: Navigated to: portal
+2026-04-17 11:07:19,042 [INFO] __main__: Navigated to: scanner
+2026-04-17 11:41:23,276 [INFO] core.camera: Camera released
+2026-04-17 11:41:23,276 [INFO] __main__: Application closed
+2026-04-17 11:42:19,433 [INFO] core.face_engine: Loaded 8 known face(s) from database
+2026-04-17 11:42:19,561 [INFO] __main__: Navigated to: portal
+2026-04-17 11:42:19,561 [INFO] __main__: Application initialized
+2026-04-17 11:43:04,349 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 11:43:05,930 [INFO] core.camera: Camera started: index 0
+2026-04-17 11:43:06,450 [INFO] __main__: Navigated to: scanner
+2026-04-17 11:43:31,374 [INFO] __main__: Navigated to: scanner
+2026-04-17 11:49:02,675 [INFO] core.camera: Camera released
+2026-04-17 11:49:02,675 [INFO] __main__: Application closed
+2026-04-17 11:49:45,161 [INFO] core.face_engine: Loaded 0 known face(s) from database
+2026-04-17 11:49:45,270 [INFO] __main__: Navigated to: portal
+2026-04-17 11:49:45,270 [INFO] __main__: Application initialized
+2026-04-17 11:49:48,723 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 11:49:50,255 [INFO] core.camera: Camera started: index 0
+2026-04-17 11:49:50,734 [INFO] __main__: Navigated to: scanner
+2026-04-17 11:53:18,942 [INFO] core.camera: Camera released
+2026-04-17 11:53:18,942 [INFO] __main__: Application closed
+2026-04-17 11:55:40,871 [INFO] core.face_engine: Loaded 0 known face(s) from database
+2026-04-17 11:55:40,985 [INFO] __main__: Navigated to: portal
+2026-04-17 11:55:40,985 [INFO] __main__: Application initialized
+2026-04-17 11:55:44,655 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 11:55:46,171 [INFO] core.camera: Camera started: index 0
+2026-04-17 11:55:46,542 [INFO] __main__: Navigated to: scanner
+2026-04-17 11:56:27,210 [INFO] core.camera: Camera released
+2026-04-17 11:56:27,210 [INFO] __main__: Application closed
+2026-04-17 11:57:47,495 [INFO] core.face_engine: Loaded 0 known face(s) from database
+2026-04-17 11:57:47,616 [INFO] __main__: Navigated to: portal
+2026-04-17 11:57:47,616 [INFO] __main__: Application initialized
+2026-04-17 11:57:51,204 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 11:57:52,754 [INFO] core.camera: Camera started: index 0
+2026-04-17 11:57:53,005 [INFO] __main__: Navigated to: scanner
+2026-04-17 11:57:58,172 [INFO] core.camera: Camera released
+2026-04-17 11:57:58,172 [INFO] __main__: Application closed
+2026-04-17 12:00:16,086 [INFO] core.face_engine: Loaded 0 known face(s) from database
+2026-04-17 12:00:16,209 [INFO] __main__: Navigated to: portal
+2026-04-17 12:00:16,209 [INFO] __main__: Application initialized
+2026-04-17 12:00:22,344 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 12:00:24,053 [INFO] core.camera: Camera started: index 0
+2026-04-17 12:00:24,360 [INFO] __main__: Navigated to: scanner
+2026-04-17 12:02:48,683 [INFO] core.camera: Camera released
+2026-04-17 12:02:48,683 [INFO] __main__: Camera released on close
+2026-04-17 12:02:48,712 [INFO] __main__: Application closed
+2026-04-17 12:02:48,712 [INFO] __main__: Application closed
+2026-04-17 12:02:57,337 [INFO] core.face_engine: Loaded 0 known face(s) from database
+2026-04-17 12:02:57,467 [INFO] __main__: Navigated to: portal
+2026-04-17 12:02:57,467 [INFO] __main__: Application initialized
+2026-04-17 12:03:03,658 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 12:03:03,798 [INFO] core.camera: Camera started: index 0
+2026-04-17 12:03:04,852 [INFO] __main__: Navigated to: scanner
+2026-04-17 12:03:55,197 [INFO] core.camera: Camera released
+2026-04-17 12:03:55,197 [INFO] __main__: Camera released on close
+2026-04-17 12:03:55,232 [INFO] __main__: Application closed
+2026-04-17 12:03:55,232 [INFO] __main__: Application closed
+2026-04-17 12:06:42,681 [INFO] core.face_engine: Loaded 0 known face(s) from database
+2026-04-17 12:06:42,809 [INFO] __main__: Navigated to: portal
+2026-04-17 12:06:42,809 [INFO] __main__: Application initialized
+2026-04-17 12:06:45,510 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 12:06:45,586 [INFO] core.camera: Camera started: index 0
+2026-04-17 12:06:46,656 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:02:21,520 [INFO] core.face_engine: Loaded 0 known face(s) from database
+2026-04-17 14:02:21,842 [INFO] __main__: Navigated to: portal
+2026-04-17 14:02:21,842 [INFO] __main__: Application initialized
+2026-04-17 14:02:26,597 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 14:02:26,718 [INFO] core.camera: Camera started: index 0
+2026-04-17 14:02:28,045 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:02:33,696 [INFO] core.camera: Camera released
+2026-04-17 14:02:33,696 [INFO] __main__: Camera released on close
+2026-04-17 14:02:33,731 [INFO] __main__: Application closed
+2026-04-17 14:02:33,731 [INFO] __main__: Application closed
+2026-04-17 14:02:41,017 [INFO] core.face_engine: Loaded 0 known face(s) from database
+2026-04-17 14:02:41,154 [INFO] __main__: Navigated to: portal
+2026-04-17 14:02:41,154 [INFO] __main__: Application initialized
+2026-04-17 14:02:44,125 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 14:02:44,207 [INFO] core.camera: Camera started: index 0
+2026-04-17 14:02:45,254 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:02:54,203 [INFO] core.camera: Camera released
+2026-04-17 14:02:54,439 [INFO] core.camera: Camera started: index 0
+2026-04-17 14:02:55,483 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:03:48,780 [INFO] core.camera: Camera released
+2026-04-17 14:03:48,780 [INFO] __main__: Camera released on close
+2026-04-17 14:03:48,809 [INFO] __main__: Application closed
+2026-04-17 14:03:48,809 [INFO] __main__: Application closed
+2026-04-17 14:07:43,094 [INFO] core.face_engine: Loaded 0 known face(s) from database
+2026-04-17 14:07:43,384 [INFO] __main__: Navigated to: portal
+2026-04-17 14:07:43,384 [INFO] __main__: Application initialized
+2026-04-17 14:08:02,551 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 14:08:02,749 [INFO] core.camera: Camera started: index 0
+2026-04-17 14:08:02,865 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:09:15,562 [INFO] core.camera: Switched to camera 1
+2026-04-17 14:09:31,766 [INFO] core.camera: Switched to camera 2
+2026-04-17 14:09:32,101 [INFO] core.camera: Switched to camera 0
+2026-04-17 14:09:33,329 [INFO] core.camera: Switched to camera 1
+2026-04-17 14:09:34,413 [INFO] core.camera: Switched to camera 2
+2026-04-17 14:09:39,937 [INFO] core.camera: Switched to camera 0
+2026-04-17 14:09:53,812 [INFO] core.camera: Camera released
+2026-04-17 14:09:54,126 [INFO] core.camera: Camera started: index 0
+2026-04-17 14:09:54,180 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:10:00,315 [INFO] core.camera: Switched to camera 1
+2026-04-17 14:10:11,394 [INFO] core.camera: Switched to camera 2
+2026-04-17 14:10:14,143 [INFO] core.camera: Switched to camera 0
+2026-04-17 14:10:23,329 [INFO] core.camera: Switched to camera 1
+2026-04-17 14:10:25,398 [INFO] core.camera: Switched to camera 2
+2026-04-17 14:10:25,647 [INFO] core.camera: Switched to camera 0
+2026-04-17 14:14:21,884 [INFO] core.data_manager: Saved face image: D:\body\programming\projects\Main_code_version3\db\704935.jpg
+2026-04-17 14:14:23,087 [INFO] core.data_manager: Registered new student: \u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646
+2026-04-17 14:14:23,091 [INFO] core.face_engine: Loaded 0 known face(s) from database
+2026-04-17 14:14:24,824 [INFO] core.camera: Camera released
+2026-04-17 14:14:24,908 [INFO] __main__: Navigated to: portal
+2026-04-17 14:14:26,247 [INFO] core.camera: Camera started: index 0
+2026-04-17 14:14:26,294 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:18:35,183 [INFO] core.face_engine: Loaded 0 known face(s) from database
+2026-04-17 14:18:35,274 [INFO] __main__: Navigated to: portal
+2026-04-17 14:18:35,274 [INFO] __main__: Application initialized
+2026-04-17 14:18:38,262 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 14:18:38,474 [INFO] core.camera: Camera started: index 0
+2026-04-17 14:18:38,503 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:18:42,117 [INFO] core.camera: Camera released
+2026-04-17 14:18:42,457 [INFO] core.camera: Camera started: index 0
+2026-04-17 14:18:42,673 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:18:53,486 [INFO] core.camera: Camera released
+2026-04-17 14:18:53,561 [INFO] __main__: Navigated to: portal
+2026-04-17 14:18:54,725 [INFO] core.camera: Camera started: index 0
+2026-04-17 14:18:54,775 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:18:58,931 [INFO] core.camera: Switched to camera 1
+2026-04-17 14:19:00,021 [INFO] core.camera: Switched to camera 2
+2026-04-17 14:19:00,287 [INFO] core.camera: Switched to camera 0
+2026-04-17 14:19:02,316 [INFO] core.camera: Camera released
+2026-04-17 14:19:02,603 [INFO] core.camera: Camera started: index 0
+2026-04-17 14:19:02,663 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:19:06,808 [INFO] core.camera: Switched to camera 1
+2026-04-17 14:19:07,902 [INFO] core.camera: Switched to camera 2
+2026-04-17 14:19:14,207 [INFO] core.camera: Switched to camera 0
+2026-04-17 14:19:42,920 [INFO] core.data_manager: Saved face image: D:\body\programming\projects\Main_code_version3\db\461170.jpg
+2026-04-17 14:19:43,099 [INFO] core.data_manager: Registered new student: \u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646 \u0627\u0633\u0627\u0645\u0647
+2026-04-17 14:19:43,669 [INFO] core.face_engine: Loaded 1 known face(s) from database
+2026-04-17 14:19:45,611 [INFO] core.camera: Camera released
+2026-04-17 14:19:45,707 [INFO] __main__: Navigated to: portal
+2026-04-17 14:19:46,799 [INFO] core.camera: Camera started: index 0
+2026-04-17 14:19:46,841 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:20:51,021 [INFO] core.face_engine: Face matched: ID=461170, distance=0.5715
+2026-04-17 14:21:02,144 [INFO] core.data_manager: Attendance logged: \u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646 \u0627\u0633\u0627\u0645\u0647 (12345) - \u0627\u0644\u0641\u0631\u0642\u0629 \u0627\u0644\u0631\u0627\u0628\u0639\u0629 - \u0634\u0639\u0628\u0629 \u0639\u0644\u0648\u0645 \u062d\u0627\u0633\u0628
+2026-04-17 14:21:20,234 [INFO] core.camera: Camera released
+2026-04-17 14:21:20,302 [INFO] __main__: Navigated to: portal
+2026-04-17 14:21:21,631 [INFO] core.camera: Camera started: index 0
+2026-04-17 14:21:21,679 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:21:28,805 [INFO] core.camera: Switched to camera 1
+2026-04-17 14:21:29,875 [INFO] core.camera: Switched to camera 2
+2026-04-17 14:21:33,965 [INFO] core.camera: Switched to camera 0
+2026-04-17 14:23:20,474 [INFO] core.camera: Camera released
+2026-04-17 14:23:20,474 [INFO] __main__: Camera released on close
+2026-04-17 14:23:20,520 [INFO] __main__: Application closed
+2026-04-17 14:23:20,520 [INFO] __main__: Application closed
+2026-04-17 14:24:27,620 [INFO] core.face_engine: Loaded 1 known face(s) from database
+2026-04-17 14:24:27,690 [INFO] __main__: Navigated to: portal
+2026-04-17 14:24:27,691 [INFO] __main__: Application initialized
+2026-04-17 14:24:31,242 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 14:24:31,466 [INFO] core.camera: Camera started: index 0
+2026-04-17 14:24:31,498 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:24:58,403 [INFO] core.camera: Camera released
+2026-04-17 14:24:58,740 [INFO] core.camera: Camera started: index 0
+2026-04-17 14:24:58,757 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:26:56,843 [INFO] core.camera: Camera released
+2026-04-17 14:26:56,843 [INFO] __main__: Camera released on close
+2026-04-17 14:26:56,877 [INFO] __main__: Application closed
+2026-04-17 14:26:56,877 [INFO] __main__: Application closed
+2026-04-17 14:32:56,063 [INFO] core.face_engine: Loaded 1 known face(s) from database
+2026-04-17 14:32:56,134 [INFO] __main__: Navigated to: portal
+2026-04-17 14:32:56,134 [INFO] __main__: Application initialized
+2026-04-17 14:32:59,609 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 14:32:59,792 [INFO] core.camera: Camera started: index 0
+2026-04-17 14:32:59,820 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:33:08,965 [INFO] core.camera: Switched to camera 1
+2026-04-17 14:33:12,032 [INFO] core.camera: Switched to camera 2
+2026-04-17 14:33:16,356 [INFO] core.camera: Switched to camera 0
+2026-04-17 14:33:19,536 [INFO] core.camera: Switched to camera 1
+2026-04-17 14:33:22,607 [INFO] core.camera: Switched to camera 2
+2026-04-17 14:33:25,254 [INFO] core.camera: Switched to camera 0
+2026-04-17 14:38:40,884 [INFO] core.face_engine: Loaded 1 known face(s) from database
+2026-04-17 14:38:40,958 [INFO] __main__: Navigated to: portal
+2026-04-17 14:38:40,958 [INFO] __main__: Application initialized
+2026-04-17 14:38:43,805 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 14:38:44,041 [INFO] core.camera: Camera started: index 0
+2026-04-17 14:38:44,080 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:38:51,153 [INFO] core.camera: Switched to camera 1
+2026-04-17 14:39:32,931 [INFO] core.face_engine: Loaded 1 known face(s) from database
+2026-04-17 14:39:33,007 [INFO] __main__: Navigated to: portal
+2026-04-17 14:39:33,007 [INFO] __main__: Application initialized
+2026-04-17 14:39:35,616 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 14:39:35,816 [INFO] core.camera: Camera started: index 0
+2026-04-17 14:39:35,846 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:39:38,864 [INFO] core.camera: Switched to camera 1
+2026-04-17 14:40:10,924 [INFO] core.camera: Camera released
+2026-04-17 14:40:12,074 [INFO] core.camera: Camera started: index 1
+2026-04-17 14:40:12,091 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:42:19,962 [INFO] core.data_manager: Saved face image: D:\body\programming\projects\Main_code_version3\db\120132.jpg
+2026-04-17 14:42:20,121 [INFO] core.data_manager: Registered new student: hhhh
+2026-04-17 14:42:21,055 [INFO] core.face_engine: Loaded 2 known face(s) from database
+2026-04-17 14:42:24,082 [INFO] core.camera: Camera released
+2026-04-17 14:42:24,153 [INFO] __main__: Navigated to: portal
+2026-04-17 14:42:26,855 [INFO] core.camera: Camera started: index 1
+2026-04-17 14:42:26,870 [INFO] __main__: Navigated to: scanner
+2026-04-17 14:42:31,949 [INFO] core.face_engine: Face matched: ID=120132, distance=0.1942
+2026-04-17 14:49:46,040 [INFO] core.face_engine: Face matched: ID=461170, distance=0.5715
+2026-04-17 14:49:52,921 [INFO] core.data_manager: Attendance logged: \u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646 \u0627\u0633\u0627\u0645\u0647 (12345) - \u0627\u0644\u0641\u0631\u0642\u0629 \u0627\u0644\u0631\u0627\u0628\u0639\u0629 - \u0634\u0639\u0628\u0629 \u0639\u0644\u0648\u0645 \u062d\u0627\u0633\u0628
+2026-04-17 14:50:01,407 [INFO] core.camera: Camera released
+2026-04-17 14:50:01,407 [INFO] __main__: Camera released on close
+2026-04-17 14:50:01,459 [INFO] __main__: Application closed
+2026-04-17 14:50:01,462 [INFO] __main__: Application closed
+2026-04-17 15:02:57,620 [INFO] core.face_engine: Loaded 2 known face(s) from database
+2026-04-17 15:02:57,689 [INFO] __main__: Navigated to: portal
+2026-04-17 15:02:57,689 [INFO] __main__: Application initialized
+2026-04-17 15:03:25,461 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-17 15:03:25,727 [INFO] core.camera: Camera started: index 0
+2026-04-17 15:03:25,761 [INFO] __main__: Navigated to: scanner
+2026-04-17 15:03:30,011 [INFO] core.camera: Switched to camera 1
+2026-04-17 15:03:43,076 [INFO] core.face_engine: Face matched: ID=461170, distance=0.5691
+2026-04-17 15:03:48,554 [INFO] core.data_manager: Attendance logged: \u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646 \u0627\u0633\u0627\u0645\u0647 (12345) - \u0627\u0644\u0641\u0631\u0642\u0629 \u0627\u0644\u0631\u0627\u0628\u0639\u0629 - \u0634\u0639\u0628\u0629 \u0639\u0644\u0648\u0645 \u062d\u0627\u0633\u0628
+2026-04-17 15:03:53,146 [INFO] core.camera: Camera released
+2026-04-17 15:03:53,226 [INFO] __main__: Navigated to: portal
+2026-04-17 15:03:57,492 [INFO] __main__: Navigated to: instructor
+2026-04-17 15:13:05,090 [INFO] __main__: Navigated to: portal
+2026-04-17 15:13:07,401 [INFO] core.camera: Camera started: index 1
+2026-04-17 15:13:07,419 [INFO] __main__: Navigated to: scanner
+2026-04-17 15:13:36,599 [INFO] core.face_engine: Face matched: ID=120132, distance=0.3684
+2026-04-17 15:13:41,446 [INFO] core.camera: Camera released
+2026-04-17 15:13:41,508 [INFO] __main__: Navigated to: portal
+2026-04-17 17:45:51,496 [INFO] core.camera: Camera started: index 1
+2026-04-17 17:45:51,545 [INFO] __main__: Navigated to: scanner
+2026-04-17 17:46:05,780 [INFO] core.face_engine: Face matched: ID=120132, distance=0.4337
+2026-04-17 17:46:35,611 [INFO] core.face_engine: Face matched: ID=120132, distance=0.4370
+2026-04-17 17:46:50,663 [INFO] core.camera: Camera released
+2026-04-17 17:46:50,663 [INFO] __main__: Camera released on close
+2026-04-17 17:46:50,718 [INFO] __main__: Application closed
+2026-04-17 17:46:50,719 [INFO] __main__: Application closed
+2026-04-18 20:41:47,037 [INFO] core.face_engine: Loaded 2 known face(s) from database
+2026-04-18 20:41:48,296 [INFO] core.data_manager: Created student data file: Student_Data.xlsx
+2026-04-18 20:41:48,530 [INFO] __main__: Navigated to: portal
+2026-04-18 20:41:48,530 [INFO] __main__: Application initialized
+2026-04-18 20:41:57,772 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-18 20:41:58,000 [INFO] core.camera: Camera started: index 0
+2026-04-18 20:41:58,018 [INFO] __main__: Navigated to: scanner
+2026-04-18 20:42:03,729 [INFO] core.camera: Switched to camera 1
+2026-04-18 20:42:13,188 [INFO] core.face_engine: Face matched: ID=120132, distance=0.4728
+2026-04-18 20:42:19,344 [INFO] core.face_engine: Face matched: ID=120132, distance=0.3253
+2026-04-18 20:42:22,697 [INFO] core.camera: Camera released
+2026-04-18 20:42:22,768 [INFO] __main__: Navigated to: portal
+2026-04-18 20:42:25,010 [INFO] core.camera: Camera started: index 1
+2026-04-18 20:42:25,010 [INFO] __main__: Navigated to: scanner
+2026-04-18 20:42:31,324 [INFO] core.face_engine: Face matched: ID=120132, distance=0.3183
+2026-04-18 20:42:54,745 [INFO] core.camera: Camera released
+2026-04-18 20:42:56,112 [INFO] core.camera: Camera started: index 1
+2026-04-18 20:42:56,192 [INFO] __main__: Navigated to: scanner
+2026-04-18 20:43:19,529 [INFO] core.data_manager: Saved face image: D:\body\programming\projects\Main_code_version3\db\588430.jpg
+2026-04-18 20:43:19,561 [INFO] core.data_manager: Registered new student: oooo
+2026-04-18 20:43:19,962 [INFO] core.face_engine: Loaded 1 known face(s) from database
+2026-04-18 20:43:22,362 [INFO] core.camera: Camera released
+2026-04-18 20:43:22,418 [INFO] __main__: Navigated to: portal
+2026-04-18 20:43:24,515 [INFO] core.camera: Camera started: index 1
+2026-04-18 20:43:24,518 [INFO] __main__: Navigated to: scanner
+2026-04-18 20:43:28,990 [INFO] core.face_engine: Face matched: ID=588430, distance=0.2882
+2026-04-18 20:43:36,935 [INFO] core.camera: Camera released
+2026-04-18 20:43:36,993 [INFO] __main__: Navigated to: portal
+2026-04-18 20:43:42,581 [INFO] __main__: Navigated to: instructor
+2026-04-18 20:43:51,946 [INFO] __main__: Navigated to: portal
+2026-04-18 20:44:18,936 [INFO] __main__: Navigated to: instructor
+2026-04-18 20:44:32,843 [INFO] __main__: Navigated to: portal
+2026-04-18 20:44:34,809 [INFO] core.camera: Camera started: index 1
+2026-04-18 20:44:34,809 [INFO] __main__: Navigated to: scanner
+2026-04-18 20:44:52,679 [INFO] core.face_engine: Face matched: ID=588430, distance=0.2203
+2026-04-18 20:46:11,676 [INFO] core.camera: Camera released
+2026-04-18 20:46:11,676 [INFO] __main__: Camera released on close
+2026-04-18 20:46:11,718 [INFO] __main__: Application closed
+2026-04-18 20:46:11,719 [INFO] __main__: Application closed
+2026-04-20 15:38:59,169 [INFO] core.face_engine: Loaded 0 known face(s) from database
+2026-04-20 15:38:59,480 [INFO] __main__: Navigated to: portal
+2026-04-20 15:38:59,480 [INFO] __main__: Application initialized
+2026-04-20 15:39:25,999 [INFO] __main__: Navigated to: instructor
+2026-04-20 15:40:01,213 [INFO] __main__: Navigated to: portal
+2026-04-20 15:40:04,766 [INFO] core.camera: Found cameras: [0, 1, 2]
+2026-04-20 15:40:05,010 [INFO] core.camera: Camera started: index 0
+2026-04-20 15:40:05,043 [INFO] __main__: Navigated to: scanner
+2026-04-20 15:40:11,187 [INFO] core.camera: Switched to camera 1
+2026-04-20 15:41:00,877 [INFO] core.camera: Camera released
+2026-04-20 15:41:00,943 [INFO] __main__: Navigated to: portal
+2026-04-20 15:41:09,420 [INFO] core.camera: Camera started: index 1
+2026-04-20 15:41:09,420 [INFO] __main__: Navigated to: scanner
+2026-04-20 15:41:12,375 [INFO] core.camera: Camera released
+2026-04-20 15:41:13,470 [INFO] core.camera: Camera started: index 1
+2026-04-20 15:41:13,554 [INFO] __main__: Navigated to: scanner
+2026-04-20 15:41:43,335 [INFO] core.data_manager: Saved face image: D:\body\programming\projects\Main_code_version3\db\740792.jpg
+2026-04-20 15:41:44,539 [INFO] core.data_manager: Registered new student: abdelrahman usama
+2026-04-20 15:41:44,917 [INFO] core.face_engine: Loaded 1 known face(s) from database
+2026-04-20 15:41:47,170 [INFO] core.camera: Camera released
+2026-04-20 15:41:47,235 [INFO] __main__: Navigated to: portal
+2026-04-20 15:41:49,483 [INFO] core.camera: Camera started: index 1
+2026-04-20 15:41:49,484 [INFO] __main__: Navigated to: scanner
+2026-04-20 15:41:53,095 [INFO] core.face_engine: Face matched: ID=740792, distance=0.2075
+2026-04-20 15:42:17,296 [INFO] core.camera: Camera released
+2026-04-20 15:42:17,381 [INFO] __main__: Navigated to: portal
+2026-04-20 18:39:50,548 [INFO] __main__: Camera released on close
+2026-04-20 18:39:50,575 [INFO] __main__: Application closed
+2026-04-20 18:39:50,575 [INFO] __main__: Application closed
+2026-04-20 22:01:17,219 [INFO] core.face_engine: Loaded 1 known face(s) from database
+2026-04-20 22:01:17,347 [INFO] __main__: Navigated to: portal
+2026-04-20 22:01:17,347 [INFO] __main__: Application initialized
+2026-04-20 22:01:49,009 [INFO] core.camera: Found cameras: [0]
+2026-04-20 22:01:49,704 [INFO] core.camera: Camera started: index 0
+2026-04-20 22:01:49,732 [INFO] __main__: Navigated to: scanner
+2026-04-20 22:02:40,965 [INFO] core.camera: Switched to camera 0
+2026-04-20 22:02:42,188 [INFO] core.camera: Switched to camera 0
+2026-04-20 23:51:58,331 [INFO] core.camera: Switched to camera 0
+2026-04-22 21:17:13,135 [INFO] core.camera: Camera released
+2026-04-22 21:17:13,138 [INFO] __main__: Application closed
+2026-04-22 21:17:20,073 [INFO] core.face_engine: Loaded 1 known face(s) from database
+2026-04-22 21:17:20,378 [INFO] __main__: Navigated to: portal
+2026-04-22 21:17:20,378 [INFO] __main__: Application initialized
+2026-04-22 21:17:48,588 [INFO] __main__: Application closed
+2026-04-22 21:31:43,729 [INFO] core.face_engine: Loaded 1 known face(s) from database
+2026-04-22 21:31:43,903 [INFO] __main__: Navigated to: portal
+2026-04-22 21:31:43,903 [INFO] __main__: Application initialized
+2026-04-22 21:32:03,741 [INFO] __main__: Navigated to: instructor
+2026-04-22 21:32:06,748 [INFO] __main__: Navigated to: portal
+2026-04-22 21:32:14,417 [INFO] __main__: Camera released on close
+2026-04-22 21:32:14,568 [INFO] __main__: Application closed
+2026-04-22 21:32:14,568 [INFO] __main__: Application closed
+2026-04-22 21:32:48,725 [INFO] core.face_engine: Loaded 1 known face(s) from database
+2026-04-22 21:32:48,851 [INFO] __main__: Navigated to: portal
+2026-04-22 21:32:48,851 [INFO] __main__: Application initialized
+2026-04-22 21:33:02,854 [INFO] __main__: Navigated to: instructor
+2026-04-23 13:17:00,211 [INFO] __main__: Navigated to: portal
+2026-04-23 13:17:10,510 [INFO] __main__: Navigated to: instructor
+2026-04-23 13:17:13,989 [INFO] core.camera: Found cameras: [0]
+2026-04-23 13:17:15,434 [INFO] core.camera: Camera started: index 0
+2026-04-23 13:17:15,469 [INFO] __main__: Navigated to: scanner
+2026-04-25 17:20:46,315 [INFO] core.face_engine: Loaded 1 known face(s) from database
+2026-04-25 17:20:46,415 [INFO] __main__: Navigated to: portal
+2026-04-25 17:20:46,415 [INFO] __main__: Application initialized
+2026-04-25 17:21:38,916 [INFO] core.camera: Found cameras: [0]
+2026-04-25 17:21:39,506 [INFO] core.camera: Camera started: index 0
+2026-04-25 17:21:39,519 [INFO] __main__: Navigated to: scanner
+2026-04-25 17:24:05,911 [INFO] core.camera: Switched to camera 0
+2026-04-25 17:26:09,556 [INFO] core.camera: Switched to camera 0
+2026-04-25 17:26:10,775 [INFO] core.camera: Switched to camera 0
+2026-04-25 17:26:28,371 [INFO] core.camera: Switched to camera 0
+2026-04-25 17:26:31,070 [INFO] core.camera: Switched to camera 0
+2026-04-25 17:26:49,924 [INFO] core.camera: Switched to camera 0
+2026-04-25 17:26:52,937 [INFO] core.camera: Switched to camera 0
+2026-04-25 17:27:02,255 [INFO] core.camera: Camera released
+2026-04-25 17:27:02,255 [INFO] __main__: Camera released on close
+2026-04-25 17:27:02,352 [INFO] __main__: Application closed
+2026-04-25 17:27:02,352 [INFO] __main__: Application closed
+2026-04-25 17:28:11,563 [INFO] core.face_engine: Loaded 1 known face(s) from database
+2026-04-25 17:28:11,721 [INFO] __main__: Navigated to: portal
+2026-04-25 17:28:11,721 [INFO] __main__: Application initialized
+2026-04-25 17:28:17,188 [INFO] core.camera: Found cameras: [0]
+2026-04-25 17:28:17,948 [INFO] core.camera: Camera started: index 0
+2026-04-25 17:28:17,973 [INFO] __main__: Navigated to: scanner
+2026-04-25 17:28:49,127 [INFO] core.camera: Switched to camera 0
+2026-04-25 17:28:50,331 [INFO] core.camera: Switched to camera 0
+2026-04-25 17:28:55,223 [INFO] core.camera: Switched to camera 0
+2026-04-25 17:28:56,460 [INFO] core.camera: Switched to camera 0
