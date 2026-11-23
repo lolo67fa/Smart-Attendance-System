@@ -7,12 +7,17 @@ is NEVER blocked by cap.read().
 
 import cv2
 import os
+import sys
 import threading
 import logging
 import contextlib
 
 
 logger = logging.getLogger(__name__)
+
+# DirectShow only exists on Windows. On macOS/Linux let OpenCV pick the
+# native backend (AVFoundation on macOS, V4L2 on Linux).
+CAMERA_BACKEND = cv2.CAP_DSHOW if sys.platform == "win32" else cv2.CAP_ANY
 
 
 @contextlib.contextmanager
@@ -39,7 +44,7 @@ def _open_camera(cam_id: int):
     causes every frame to be entirely black.  Explicitly forcing 640x480 right
     after creation guarantees we always get real pixel data.
     """
-    cap = cv2.VideoCapture(cam_id, cv2.CAP_DSHOW)
+    cap = cv2.VideoCapture(cam_id, CAMERA_BACKEND)
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
     return cap
@@ -54,7 +59,7 @@ def find_available_cameras(max_cameras=10):
     available = []
     for index in range(max_cameras):
         with _suppress_stderr():
-            cap = cv2.VideoCapture(index, cv2.CAP_DSHOW)
+            cap = cv2.VideoCapture(index, CAMERA_BACKEND)
         if cap is not None and cap.isOpened():
             available.append(index)
             cap.release()

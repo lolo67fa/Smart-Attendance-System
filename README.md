@@ -62,9 +62,69 @@ python main.py
 
 ## Requirements
 
-* Python 3
+* Python 3.12 (tested with 3.12.16)
 * A working camera
 * The required Python libraries listed in `requirements.txt`
+
+## Running on macOS (Apple Silicon) — tested
+
+These exact commands were tested on an M-series MacBook Air with a fresh environment.
+`dlib` has no prebuilt wheel for Apple Silicon, so pip compiles it; that needs Xcode
+Command Line Tools and Homebrew's `libpng` (dlib's bundled copy of libpng does not
+compile with the current macOS SDK: `fatal error: 'fp.h' file not found`).
+
+```bash
+xcode-select --install          # skip if Xcode or the Command Line Tools are installed
+brew install libpng
+```
+
+```bash
+# Python 3.12 via uv (https://docs.astral.sh/uv/); python.org's 3.12 installer also works
+uv python install 3.12
+uv venv --seed --python 3.12 .venv
+source .venv/bin/activate
+pip install -r requirements.txt   # compiling dlib takes a few minutes
+python main.py
+```
+
+The first launch takes about 30 seconds while the face models load.
+Instructor passcode: `1234` (set in `ui/theme.py`).
+
+**Camera permission:** macOS asks for camera access the first time the app opens the
+camera. Run `python main.py` from Terminal and click **Allow** ("Terminal would like to
+access the camera"). If you clicked "Don't Allow" earlier, enable Terminal under
+System Settings → Privacy & Security → Camera, then restart Terminal.
+
+## Where the data is saved
+
+All files are created in the folder you run the app from:
+
+| What | File |
+| --- | --- |
+| Registered students (ID, name, photo IDs) | `Student_Data.xlsx` |
+| Student face photos | `db/<photo id>.jpg` |
+| Daily attendance | `Attendance_Logs/Attendance_Log_YYYY-MM-DD.xlsx` |
+| Uploaded excuses | `Student_Excuses_Files/<section>/<id>_<name>/` |
+
+Each attendance row has: `University ID`, `Student Name`, `Attendance Date` (YYYY-MM-DD),
+`Attendance Time` (HH:MM:SS) and `Section`. A new file is created each day; confirming
+the same student twice adds two rows.
+
+## Demo mode (no camera)
+
+`tools/demo_walkthrough.py` runs the real app and walks through a full attendance
+journey on its own: instructor login → select section → register a test student from an
+image → student scan → confirm → read back the day's Excel log and check it. Only the
+camera is simulated (the test image is served as the camera frame) and pop-ups appear as
+in-window messages. The window is labelled **DEMO MODE · no camera · test data**, and all
+data goes to `demo_data/`, never to your real files.
+
+```bash
+python tools/demo_walkthrough.py --face path/to/test_face.jpg --name "Test Student" --id 2026001
+```
+
+It prints PASS/FAIL for each check and exits with code 0 when everything passed.
+Add `--fast` for shorter pauses or `--keep-open` to leave the window open.
 
 ## Project Purpose
 

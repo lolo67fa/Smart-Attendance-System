@@ -4,8 +4,20 @@ Management interface for academic staff.
 """
 
 import os
+import sys
+import subprocess
 import customtkinter
 from tkinter import messagebox, filedialog
+
+
+def _open_path(path):
+    """Open a file or folder with the OS default app (os.startfile is Windows-only)."""
+    if sys.platform == "win32":
+        os.startfile(path)
+    elif sys.platform == "darwin":
+        subprocess.Popen(["open", path])
+    else:
+        subprocess.Popen(["xdg-open", path])
 
 from ui.theme import *
 from ui.components import (
@@ -232,7 +244,7 @@ class InstructorScreen:
         file_path = self.app.data_manager.get_attendance_file_path()
 
         if os.path.exists(file_path):
-            os.startfile(file_path)
+            _open_path(file_path)
         else:
             messagebox.showinfo("Notice", "No attendance record found for today yet.")
 
@@ -241,7 +253,7 @@ class InstructorScreen:
         if not os.path.exists(self.excuses_folder):
             os.makedirs(self.excuses_folder, exist_ok=True)
 
-        os.startfile(self.excuses_folder)
+        _open_path(self.excuses_folder)
 
     def _on_section_change(self, selected):
         """Update the selected academic section in app state."""
