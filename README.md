@@ -1,5 +1,9 @@
 # Smart Attendance System
 
+**حاضر | Hader** — the app's display name.
+
+![Home: choose a section and start the attendance session](docs/screenshots/1-home.jpg)
+
 A Python-based desktop application developed as a graduation project to automate student attendance using facial recognition.
 
 The system recognizes registered students through the camera and automatically records their name, student ID, attendance date, and time in an Excel file. It also provides an instructor interface for registering students, selecting sections, reviewing attendance records, and checking submitted excuses.
@@ -107,24 +111,56 @@ All files are created in the folder you run the app from:
 | Uploaded excuses | `Student_Excuses_Files/<section>/<id>_<name>/` |
 
 Each attendance row has: `University ID`, `Student Name`, `Attendance Date` (YYYY-MM-DD),
-`Attendance Time` (HH:MM:SS) and `Section`. A new file is created each day; confirming
-the same student twice adds two rows.
+`Attendance Time` (HH:MM:SS) and `Section`. A new file is created each day. A student is
+recorded once per section per day: scanning them again shows "Already recorded today"
+and writes nothing.
 
-## Demo mode (no camera)
+## Using the app
 
-`tools/demo_walkthrough.py` runs the real app and walks through a full attendance
-journey on its own: instructor login → select section → register a test student from an
-image → student scan → confirm → read back the day's Excel log and check it. Only the
-camera is simulated (the test image is served as the camera frame) and pop-ups appear as
-in-window messages. The window is labelled **DEMO MODE · no camera · test data**, and all
-data goes to `demo_data/`, never to your real files.
+1. **Home** — choose the section and press **Start attendance session** (Enter).
+   The instructor passcode (`1234`, in `ui/theme.py`) is asked once per run.
+   If no students are registered yet, Home asks you to register one first.
+2. **Session** — students look at the camera one at a time. Scanning starts by itself
+   when one face is steady (or press Space / **Scan now**). "Attendance recorded" appears
+   only after the row has been read back from the day's Excel file; the list on the right
+   shows everyone recorded today in that section. Esc ends the session.
+3. **Register a student** — full name → university ID → face photo (camera or image
+   file) → Save. Errors appear next to the field; typed values stay when you retake.
+4. **Attendance log** — pick section and date; open the file in Excel/Numbers or show it
+   in Finder.
+5. **Student excuses** — files students uploaded after being recognised.
+
+Keyboard: Tab moves between controls (focused controls get a dark ring),
+Space/Enter activates them, Esc goes back.
+
+| Session | Attendance log |
+| --- | --- |
+| ![Session](docs/screenshots/2-session.jpg) | ![Log](docs/screenshots/3-log.jpg) |
+
+## Demo mode and test data (no camera needed)
+
+`tools/demo_walkthrough.py` runs the real app and checks a full journey on its own:
+register a test student from an image → choose a section → start the session → the face
+is recognised and recorded → a second scan is refused as a duplicate → the log shows the
+saved row → "no camera" and "camera access denied" states. Only the camera is simulated
+(the test image is served as the camera frame); the window is labelled
+**DEMO MODE · simulated camera · test data** and all data goes to `demo_data/`.
 
 ```bash
-python tools/demo_walkthrough.py --face path/to/test_face.jpg --name "Test Student" --id 2026001
+python tools/demo_walkthrough.py --face path/to/test_face.jpg --fast
+python tools/demo_walkthrough.py --face path/to/test_face.jpg --interactive   # use it by hand
 ```
 
 It prints PASS/FAIL for each check and exits with code 0 when everything passed.
-Add `--fast` for shorter pauses or `--keep-open` to leave the window open.
+Use a photo of someone who agreed to it (for example yourself).
+
+`tools/seed_demo_data.py` fills a folder with fictional students and attendance (no real
+faces) for screenshots:
+
+```bash
+python tools/seed_demo_data.py --data-dir demo_data --wipe
+cd demo_data && python ../main.py
+```
 
 ## Project Purpose
 
