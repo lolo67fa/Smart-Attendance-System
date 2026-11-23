@@ -11,16 +11,18 @@ This file serves as the thin orchestrator that:
 import logging
 import customtkinter
 
-from ui.theme import (
-    BG_PRIMARY, WINDOW_TITLE, DEFAULT_SECTION,
-)
+import sys
+
+from ui.theme import BG_APP, WINDOW_TITLE, DEFAULT_SECTION, MIN_WINDOW
 from core.camera import CameraManager
 from core.face_engine import FaceEngine
 from core.data_manager import DataManager
 
-from screens.portal_screen import PortalScreen
-from screens.instructor_screen import InstructorScreen
-from screens.scanner_screen import ScannerScreen
+from screens.home_screen import HomeScreen
+from screens.session_screen import SessionScreen
+from screens.register_screen import RegisterScreen
+from screens.log_screen import LogScreen
+from screens.excuses_screen import ExcusesScreen
 
 
 # ─── Logging Setup ──────────────────────────────────────────────
@@ -33,7 +35,7 @@ logger = logging.getLogger(__name__)
 
 
 # ─── App Theme ──────────────────────────────────────────────────
-customtkinter.set_appearance_mode("Dark")
+customtkinter.set_appearance_mode("Light")
 customtkinter.set_default_color_theme("blue")
 
 
@@ -47,13 +49,17 @@ class AttendanceApp:
         # ─── Root Window ────────────────────────────────────────
         self.root = customtkinter.CTk()
         self.root.title(WINDOW_TITLE)
-        self.root.configure(fg_color=BG_PRIMARY)
+        self.root.configure(fg_color=BG_APP)
 
-        # Fullscreen on launch
+        # Laptop-friendly size: fill most of the screen, never below the minimum
         screen_w = self.root.winfo_screenwidth()
         screen_h = self.root.winfo_screenheight()
-        self.root.geometry(f"{screen_w}x{screen_h}")
-        self.root.state("zoomed")  # Maximized window on Windows
+        self.root.minsize(*MIN_WINDOW)
+        w = max(MIN_WINDOW[0], min(1440, screen_w - 40))
+        h = max(MIN_WINDOW[1], min(900, screen_h - 80))
+        self.root.geometry(f"{w}x{h}+{max(0, (screen_w - w) // 2)}+{max(0, (screen_h - h) // 3)}")
+        if sys.platform == "win32":
+            self.root.state("zoomed")  # maximised window on Windows
 
         # ─── Shared Services ───────────────────────────────────
         self.camera_manager = CameraManager()
@@ -62,14 +68,15 @@ class AttendanceApp:
 
         # ─── App State ─────────────────────────────────────────
         self.selected_section = DEFAULT_SECTION
+        self.instructor_unlocked = False
         self.current_screen = None
         self.current_screen_name = None
 
         # ─── Guarantee camera release on window close (✕ button) ───
         self.root.protocol("WM_DELETE_WINDOW", self._on_close)
 
-        # ─── Start at Portal ───────────────────────────────────
-        self.show_screen("portal")
+        # ─── Start at Home ─────────────────────────────────────
+        self.show_screen("home")
 
         logger.info("Application initialized")
 
@@ -79,7 +86,7 @@ class AttendanceApp:
         Destroys the current screen and instantiates the new one.
 
         Args:
-            screen_name: One of 'portal', 'instructor', 'scanner'
+            screen_name: One of 'home', 'session', 'register', 'log', 'excuses'
             **kwargs: Extra arguments passed to the screen constructor
         """
         # Destroy current screen
@@ -92,9 +99,15 @@ class AttendanceApp:
 
         # Instantiate new screen
         screen_map = {
-            "portal": PortalScreen,
-            "instructor": InstructorScreen,
-            "scanner": ScannerScreen,
+            "home": HomeScreen,
+            "session": SessionScreen,
+            "register": RegisterScreen,
+            "log": LogScreen,
+            "excuses": ExcusesScreen,
+            # older names
+            "portal": HomeScreen,
+            "instructor": HomeScreen,
+            "scanner": SessionScreen,
         }
 
         screen_class = screen_map.get(screen_name)
@@ -106,6 +119,18 @@ class AttendanceApp:
         self.current_screen = screen_class(self.root, self, **kwargs)
 
         logger.info(f"Navigated to: {screen_name}")
+
+    def require_instructor(self, then, purpose="continue"):
+        """Ask for the instructor passcode once per app run, then run `then`."""
+        if self.instructor_unlocked:
+            return then()
+        from ui.components import PasscodeDialog
+
+        def unlocked():
+            self.instructor_unlocked = True
+            then()
+
+        PasscodeDialog(self.root, unlocked, purpose)
 
     def _on_close(self):
         """Unified shutdown handler — always releases the camera before exit."""
