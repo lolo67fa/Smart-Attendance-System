@@ -133,9 +133,9 @@ and writes nothing.
 Keyboard: Tab moves between controls (focused controls get a dark ring),
 Space/Enter activates them, Esc goes back.
 
-| Session | Attendance log |
-| --- | --- |
-| ![Session](docs/screenshots/2-session.jpg) | ![Log](docs/screenshots/3-log.jpg) |
+![Hader poster: choose the section, start the session, face recognised, saved to the Excel log](docs/screenshots/hader-poster.png)
+
+![Attendance log for one section and date](docs/screenshots/3-log.jpg)
 
 ## Demo mode and test data (no camera needed)
 
