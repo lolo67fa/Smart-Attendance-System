@@ -50,6 +50,7 @@ STATES = {
     "already":    ("amber",  "Already recorded today",      (AMBER, AMBER)),
     "unknown":    ("amber",  "Face not recognised",         (AMBER, None)),
     "no_face":    ("amber",  "No face in view",             (AMBER, None)),
+    "unclear":    ("amber",  "Couldn't read the face",      (AMBER, None)),
     "save_error": ("red",    "Attendance was not saved",    (RED, None)),
 }
 TONE_BG = {"petrol": BG_SURFACE, "green": GREEN_TINT, "amber": AMBER_TINT, "red": RED_TINT}
@@ -190,6 +191,7 @@ class SessionScreen:
             self.st_name.set(student["name"])
             meta = f"ID {student['id']}" + (f"   ·   {record_time}" if record_time else "")
             self.st_meta.set(meta)
+            self.st_meta.configure(wraplength=260)
             img_path = self.dm.get_student_image_path(student["id"])
             self.photo.update_image(Image.open(img_path) if img_path else None)
         else:
@@ -316,10 +318,15 @@ class SessionScreen:
             self._stable = self._stable + 1 if len(self._faces) == 1 else 0
             if self._stable >= AUTO_SCAN_STABLE_DETECTIONS:
                 self._scan(frame)
-        elif self._state in ("recorded", "already", "unknown", "no_face", "save_error"):
-            # stay on the result while the face is still there; go back once it has left
+        elif self._state in ("recorded", "already", "unknown"):
+            # a confirmed result stays while the same face is in view (no flicker);
+            # it clears once the face has left the frame
             face_gone = now - self._last_face_seen > FACE_GONE_MS
             if now >= self._hold_until and face_gone:
+                self._go_ready()
+        elif self._state in ("no_face", "unclear"):
+            # nothing was decided: after a short pause, try again on its own
+            if now >= self._hold_until:
                 self._go_ready()
 
     def _overlay(self, frame, now):
@@ -372,7 +379,17 @@ class SessionScreen:
             self._scan(frame)
 
     def _scan(self, frame):
-        face, box = self.app.face_engine.detect_face(frame)
+        boxes = self.app.face_engine.detect_faces_boxes_fast(frame)
+        face, box = None, None
+        if len(boxes) == 1:
+            x, y, w, h = boxes[0]
+            p = int(0.35 * max(w, h))  # padded crop: the recogniser needs some margin
+            H, W = frame.shape[:2]
+            face, box = frame[max(0, y - p):min(H, y + h + p), max(0, x - p):min(W, x + w + p)], boxes[0]
+        elif len(boxes) > 1:
+            self._hold_until = time.monotonic() * 1000 + RESULT_HOLD_MS
+            self._set_state("unclear", f"{len(boxes)} faces are in view. Scan one student at a time.")
+            return
         if face is None:
             self._hold_until = time.monotonic() * 1000 + RESULT_HOLD_MS
             self._set_state("no_face", "Make sure the face is well lit and fully in the frame, then try again.")
@@ -390,7 +407,8 @@ class SessionScreen:
         if not result.get("success"):
             code = result.get("code")
             if code == "no_face":
-                self._set_state("no_face", "Make sure the face is well lit and fully in the frame, then try again.")
+                self._set_state("unclear", "Hold still and face the camera with even light. "
+                                           "Trying again in a moment.")
             elif code in ("unknown", "not_in_db"):
                 self._set_state("unknown", "This face isn't registered yet. Register the student from Home, "
                                            "then scan again.")
@@ -408,7 +426,7 @@ class SessionScreen:
             print(f"Could not read today's log: {e}")
         if existing:
             self._set_state("already", "Nothing new was added, so today's list has no duplicates.",
-                            student=student, record_time=f"recorded at {existing[COL_ATTENDANCE_TIME]}",
+                            student=student, record_time=existing[COL_ATTENDANCE_TIME],
                             actions=[("Upload excuse", self._upload_excuse, "secondary")])
             return
         try:
