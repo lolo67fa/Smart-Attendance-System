@@ -41,6 +41,8 @@ class FaceEngine:
         if not os.path.exists(self.cascade_path):
             logger.error(f"Haar cascade not found: {self.cascade_path}")
 
+        self._cascade = None  # created once, reused for live detection
+
         # Cache known face encodings on startup to speed up matching
         self._known_encodings = []  # list of (encoding, filename_id)
         self._encodings_loaded = False
@@ -111,6 +113,20 @@ class FaceEngine:
 
         return list(faces) if len(faces) > 0 else []
 
+    def detect_faces_boxes_fast(self, image, scale=0.5):
+        """
+        Cheap per-frame detection for the live overlay: downscaled image and a
+        cached classifier. Returns boxes (x, y, w, h) in full-frame pixels.
+        """
+        if image is None:
+            return []
+        if self._cascade is None:
+            self._cascade = cv2.CascadeClassifier(self.cascade_path)
+        small = cv2.resize(image, (0, 0), fx=scale, fy=scale)
+        gray = cv2.cvtColor(small, cv2.COLOR_BGR2GRAY) if len(small.shape) == 3 else small
+        faces = self._cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(40, 40))
+        return [tuple(int(v / scale) for v in f) for f in faces] if len(faces) else []
+
     # ─── Face Recognition ───────────────────────────────────────
 
     def recognize_face(self, face_image, callback=None):
@@ -129,7 +145,7 @@ class FaceEngine:
         Converts the OpenCV face image to RGB, computes its encoding,
         and compares against all known faces in memory.
         """
-        result = {"success": False, "user_id": None, "user_name": None, "error": None}
+        result = {"success": False, "user_id": None, "user_name": None, "error": None, "code": None}
 
         try:
             # Ensure we have up-to-date encodings
@@ -143,6 +159,7 @@ class FaceEngine:
             live_encodings = face_recognition.face_encodings(rgb_face)
             if not live_encodings:
                 result["error"] = "لم يتم اكتشاف أي وجه. حاول مرة أخرى."
+                result["code"] = "no_face"
                 if callback:
                     callback(result)
                 return
@@ -162,12 +179,15 @@ class FaceEngine:
                     result["user_name"] = student["name"]
                 else:
                     result["error"] = "الطالب غير موجود في قاعدة البيانات."
+                    result["code"] = "not_in_db"
             else:
                 result["error"] = "مستخدم غير معروف. يرجى التسجيل أو المحاولة مرة أخرى."
+                result["code"] = "unknown"
 
         except Exception as e:
             logger.error(f"Recognition error: {e}")
             result["error"] = str(e)
+            result["code"] = "error"
         finally:
             if callback:
                 callback(result)

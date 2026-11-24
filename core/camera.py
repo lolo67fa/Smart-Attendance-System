@@ -7,12 +7,57 @@ is NEVER blocked by cap.read().
 
 import cv2
 import os
+import sys
 import threading
 import logging
 import contextlib
 
 
 logger = logging.getLogger(__name__)
+
+# DirectShow only exists on Windows. On macOS/Linux let OpenCV pick the
+# native backend (AVFoundation on macOS, V4L2 on Linux).
+CAMERA_BACKEND = cv2.CAP_DSHOW if sys.platform == "win32" else cv2.CAP_ANY
+
+
+class CameraPermissionError(RuntimeError):
+    """The OS blocked camera access (macOS privacy setting)."""
+
+    def __init__(self, status):
+        self.status = status  # "not_determined" | "denied" | "restricted"
+        super().__init__(f"Camera access {status.replace('_', ' ')}")
+
+
+class CameraUnavailableError(RuntimeError):
+    """No camera was found, or it could not be opened."""
+
+
+def camera_permission_status():
+    """
+    macOS camera permission for this app, read from AVFoundation:
+    'authorized' | 'not_determined' | 'denied' | 'restricted'.
+    Returns None on other platforms or if it cannot be determined.
+    """
+    if sys.platform != "darwin":
+        return None
+    try:
+        import ctypes
+        import ctypes.util
+        objc = ctypes.cdll.LoadLibrary(ctypes.util.find_library("objc"))
+        avf = ctypes.cdll.LoadLibrary("/System/Library/Frameworks/AVFoundation.framework/AVFoundation")
+        objc.objc_getClass.restype = ctypes.c_void_p
+        objc.objc_getClass.argtypes = [ctypes.c_char_p]
+        objc.sel_registerName.restype = ctypes.c_void_p
+        objc.sel_registerName.argtypes = [ctypes.c_char_p]
+        send = ctypes.CFUNCTYPE(ctypes.c_long, ctypes.c_void_p, ctypes.c_void_p, ctypes.c_void_p)(
+            ctypes.cast(objc.objc_msgSend, ctypes.c_void_p).value)
+        media_video = ctypes.c_void_p.in_dll(avf, "AVMediaTypeVideo").value
+        status = send(objc.objc_getClass(b"AVCaptureDevice"),
+                      objc.sel_registerName(b"authorizationStatusForMediaType:"), media_video)
+        return {0: "not_determined", 1: "restricted", 2: "denied", 3: "authorized"}.get(status)
+    except Exception as e:  # never let the check itself break the app
+        logger.debug(f"Camera permission check failed: {e}")
+        return None
 
 
 @contextlib.contextmanager
@@ -39,13 +84,13 @@ def _open_camera(cam_id: int):
     causes every frame to be entirely black.  Explicitly forcing 640x480 right
     after creation guarantees we always get real pixel data.
     """
-    cap = cv2.VideoCapture(cam_id, cv2.CAP_DSHOW)
+    cap = cv2.VideoCapture(cam_id, CAMERA_BACKEND)
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
     return cap
 
 
-def find_available_cameras(max_cameras=10):
+def find_available_cameras(max_cameras=10 if sys.platform == "win32" else 3):
     """Scan for available camera devices.
     Uses DirectShow (CAP_DSHOW) on Windows to bypass the buggy MSMF backend.
     Suppresses the obsensor stderr noise produced by OpenCV's depth-sensor plugin
@@ -54,7 +99,7 @@ def find_available_cameras(max_cameras=10):
     available = []
     for index in range(max_cameras):
         with _suppress_stderr():
-            cap = cv2.VideoCapture(index, cv2.CAP_DSHOW)
+            cap = cv2.VideoCapture(index, CAMERA_BACKEND)
         if cap is not None and cap.isOpened():
             available.append(index)
             cap.release()
@@ -124,18 +169,29 @@ class CameraManager:
         return self.available_cameras
 
     def start(self):
-        """Open the selected camera and begin capturing frames in the background."""
+        """Open the selected camera and begin capturing frames in the background.
+
+        Raises CameraPermissionError when the OS blocks access and
+        CameraUnavailableError when no camera can be opened.
+        """
+        permission = camera_permission_status()
+        if permission in ("denied", "restricted"):
+            raise CameraPermissionError(permission)
+
         if not self.available_cameras:
             self.discover_cameras()
 
         if not self.available_cameras:
-            raise RuntimeError("No camera found. Please connect a camera and restart.")
+            # On macOS a first-time request fails while the permission prompt is open.
+            if camera_permission_status() == "not_determined":
+                raise CameraPermissionError("not_determined")
+            raise CameraUnavailableError("No camera found. Connect a camera and try again.")
 
         cam_id = self.available_cameras[self.chosen_index]
         self.webcam = _open_camera(cam_id)
 
         if not self.webcam.isOpened():
-            raise RuntimeError(f"Failed to open camera {cam_id}")
+            raise CameraUnavailableError(f"Failed to open camera {cam_id}")
 
         self._running = True
         self._start_reader_thread()
