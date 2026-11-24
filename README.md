@@ -2,7 +2,7 @@
 
 <img src="docs/brand/hader-mark.png" alt="Hader brand mark: an open-cornered scan frame with a check mark inside" width="88">
 
-# حاضر | Hader
+# &lrm;حاضر | Hader
 
 ### Smart Attendance System
 
